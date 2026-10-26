@@ -5,7 +5,10 @@ Code for the **Python Foundations** live session on
 presented by Vishal Singh.
 
 Every demo from the slides is here as a runnable file, plus one exercise per module
-with a starter file and a worked solution.
+with a starter file and a worked solution. The slides themselves are in
+[`slides/python-foundations-slides.pdf`](slides/python-foundations-slides.pdf).
+
+If you want to support us, you can [buy me a coffee](https://buymeacoffee.com/the_growthclub) ☕
 
 ## What you need
 
@@ -40,6 +43,7 @@ python 01_data_types_io/tax_calculator.py
 | `07_files_exceptions` | 7 · Working with Files and Exceptions | `exceptions.py`, `reading_files.py`, `writing_files.py`, `file_manipulation.py`, `file_organizer.py` |
 | `exercises` | Your turn | `ex01` to `ex07`: a task and a starter file per module |
 | `solutions` | Answers | Worked solutions for `ex01` to `ex07` |
+| `slides` | The session slides | `python-foundations-slides.pdf` |
 
 `hello.py` is the classic first program.
 
@@ -98,3 +102,9 @@ $env:OPENWEATHER_API_KEY = "your-key"
 The file demos in `07_files_exceptions` only touch files they create themselves
 (`list.txt`, `playground/`, `messy_folder/`). Delete those any time; the scripts
 recreate them.
+
+## Support the channel
+
+If this session helped you, subscribe to
+[The Growth Club](https://www.youtube.com/@TheGrowthClubOfficial). And if you want to
+support us, you can buy me a coffee: <https://buymeacoffee.com/the_growthclub>.
