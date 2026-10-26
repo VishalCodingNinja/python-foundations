@@ -1,4 +1,4 @@
-# tax_calculator.py
+# 02_tax_calculator.py
 price = 59.99
 tax_rate = 0.08  # 8%
 

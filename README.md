@@ -65,15 +65,18 @@ python hello.py
 You should see `hello world`. Now try a real demo:
 
 ```bash
-python 01_data_types_io/tax_calculator.py
+python 01_data_types_io/02_tax_calculator.py
 ```
 
 > On macOS and Linux, type `python3` wherever this guide says `python`.
 
 ## How to follow along
 
+Folders are numbered by module, and the files inside each folder are numbered in the
+order they come up in the session, so you can work through them top to bottom.
+
 1. **Watch** a module in the video, with the [slides](slides/python-foundations-slides.pdf) open.
-2. **Run** that module's demos, then change the numbers and text to see what happens.
+2. **Run** that module's demos in order, then change the numbers and text to see what happens.
 3. **Practise** with the module's exercise in [`exercises/`](exercises/).
 4. **Compare** your answer with the matching file in [`solutions/`](solutions/).
 
@@ -96,68 +99,68 @@ python 01_data_types_io/tax_calculator.py
 
 | Lesson | File |
 |---|---|
-| Introducing data types | [`data_types.py`](01_data_types_io/data_types.py) |
+| Introducing data types | [`01_data_types.py`](01_data_types_io/01_data_types.py) |
 | Demo: install Python | [`hello.py`](hello.py) |
-| Demo: tax calculator | [`tax_calculator.py`](01_data_types_io/tax_calculator.py) |
-| Strings and input and output | [`strings_input_output.py`](01_data_types_io/strings_input_output.py) |
-| Demo: age calculator | [`age_calculator.py`](01_data_types_io/age_calculator.py) |
+| Demo: tax calculator | [`02_tax_calculator.py`](01_data_types_io/02_tax_calculator.py) |
+| Strings and input and output | [`03_strings_input_output.py`](01_data_types_io/03_strings_input_output.py) |
+| Demo: age calculator | [`04_age_calculator.py`](01_data_types_io/04_age_calculator.py) |
 
 **Module 2 · Conditionals and Imports**
 
 | Lesson | File |
 |---|---|
-| Conditionals | [`conditionals.py`](02_conditionals_imports/conditionals.py) |
-| Conditional operators and booleans | [`operators_booleans.py`](02_conditionals_imports/operators_booleans.py) |
-| Demo: rock, paper, scissors | [`rock_paper_scissors.py`](02_conditionals_imports/rock_paper_scissors.py) |
-| Importing modules | [`imports_demo.py`](02_conditionals_imports/imports_demo.py) |
-| Demo: randomize the game | [`rock_paper_scissors_random.py`](02_conditionals_imports/rock_paper_scissors_random.py) |
+| Conditionals | [`01_conditionals.py`](02_conditionals_imports/01_conditionals.py) |
+| Conditional operators and booleans | [`02_operators_booleans.py`](02_conditionals_imports/02_operators_booleans.py) |
+| Demo: rock, paper, scissors | [`03_rock_paper_scissors.py`](02_conditionals_imports/03_rock_paper_scissors.py) |
+| Importing modules | [`04_imports_demo.py`](02_conditionals_imports/04_imports_demo.py) |
+| Demo: randomize the game | [`05_rock_paper_scissors_random.py`](02_conditionals_imports/05_rock_paper_scissors_random.py) |
 
 **Module 3 · Lists and Loops**
 
 | Lesson | File |
 |---|---|
-| Lists and loops | [`lists_loops.py`](03_lists_loops/lists_loops.py) |
-| Demo: sum expenses | [`sum_expenses.py`](03_lists_loops/sum_expenses.py) |
-| Loops with `range()` | [`range_loops.py`](03_lists_loops/range_loops.py) |
-| Demo: loan payment calculator | [`loan_calculator.py`](03_lists_loops/loan_calculator.py) |
+| Lists and loops | [`01_lists_loops.py`](03_lists_loops/01_lists_loops.py) |
+| Demo: sum expenses | [`02_sum_expenses.py`](03_lists_loops/02_sum_expenses.py) |
+| Loops with `range()` | [`03_range_loops.py`](03_lists_loops/03_range_loops.py) |
+| Demo: loan payment calculator | [`04_loan_calculator.py`](03_lists_loops/04_loan_calculator.py) |
 
 **Module 4 · Dictionaries, JSON, and Pip**
 
 | Lesson | File |
 |---|---|
-| Dictionaries | [`dictionaries.py`](04_dicts_json_pip/dictionaries.py) |
-| Demo: movie schedule | [`movie_schedule.py`](04_dicts_json_pip/movie_schedule.py) |
-| Combining lists and dictionaries | [`lists_and_dicts.py`](04_dicts_json_pip/lists_and_dicts.py) |
-| Demo: nested contacts | [`nested_contacts.py`](04_dicts_json_pip/nested_contacts.py) |
-| Reading JSON | [`json_basics.py`](04_dicts_json_pip/json_basics.py) |
+| Dictionaries | [`01_dictionaries.py`](04_dicts_json_pip/01_dictionaries.py) |
+| Demo: movie schedule | [`02_movie_schedule.py`](04_dicts_json_pip/02_movie_schedule.py) |
+| Combining lists and dictionaries | [`03_lists_and_dicts.py`](04_dicts_json_pip/03_lists_and_dicts.py) |
+| Demo: nested contacts | [`04_nested_contacts.py`](04_dicts_json_pip/04_nested_contacts.py) |
+| Reading JSON | [`05_json_basics.py`](04_dicts_json_pip/05_json_basics.py) |
 | Demo: virtual environment and pip | [Weather API setup](#weather-api-setup-module-4) |
-| Demo: OpenWeatherMap API | [`weather_api.py`](04_dicts_json_pip/weather_api.py) |
+| Demo: OpenWeatherMap API | [`06_weather_api.py`](04_dicts_json_pip/06_weather_api.py) |
 
 **Module 5 · Functions**
 
 | Lesson | File |
 |---|---|
-| Functions | [`functions.py`](05_functions/functions.py) |
-| Demo: dice rolling game | [`dice_game.py`](05_functions/dice_game.py) |
+| Functions | [`01_functions.py`](05_functions/01_functions.py) |
+| Demo: dice rolling game | [`02_dice_game.py`](05_functions/02_dice_game.py) |
 
 **Module 6 · Classes and Objects**
 
 | Lesson | File |
 |---|---|
-| Classes | [`employee.py`](06_classes/employee.py) |
-| Demo: company payroll | [`payroll.py`](06_classes/payroll.py) |
-| Class inheritance | [`inheritance.py`](06_classes/inheritance.py) |
-| Demo: payroll with inheritance | [`payroll_inheritance.py`](06_classes/payroll_inheritance.py) |
+| Classes | [`01_employee.py`](06_classes/01_employee.py) |
+| Demo: company payroll | [`02_payroll.py`](06_classes/02_payroll.py) |
+| Class inheritance | [`03_inheritance.py`](06_classes/03_inheritance.py) |
+| Demo: payroll with inheritance | [`04_payroll_inheritance.py`](06_classes/04_payroll_inheritance.py) |
 
 **Module 7 · Working with Files and Exceptions**
 
 | Lesson | File |
 |---|---|
-| Exceptions | [`exceptions.py`](07_files_exceptions/exceptions.py) |
-| Reading files | [`reading_files.py`](07_files_exceptions/reading_files.py) |
-| Demo: writing files | [`writing_files.py`](07_files_exceptions/writing_files.py) |
-| File manipulation | [`file_manipulation.py`](07_files_exceptions/file_manipulation.py) |
-| Demo: file organizer | [`file_organizer.py`](07_files_exceptions/file_organizer.py) |
+| Exceptions | [`01_exceptions.py`](07_files_exceptions/01_exceptions.py) |
+| Reading files | [`02_reading_files.py`](07_files_exceptions/02_reading_files.py) |
+| Demo: writing files | [`03_writing_files.py`](07_files_exceptions/03_writing_files.py) |
+| File manipulation | [`04_file_manipulation.py`](07_files_exceptions/04_file_manipulation.py) |
+| Demo: file organizer | [`05_file_organizer.py`](07_files_exceptions/05_file_organizer.py) |
 
 </details>
 
@@ -179,7 +182,7 @@ comments where your code goes. Try it yourself first, then check the solution.
 ## Weather API setup (Module 4)
 
 Every demo runs with plain Python except
-[`weather_api.py`](04_dicts_json_pip/weather_api.py), which needs the `requests`
+[`06_weather_api.py`](04_dicts_json_pip/06_weather_api.py), which needs the `requests`
 package and a free API key.
 
 **1. Create a virtual environment**, so packages stay inside this project:
@@ -217,7 +220,7 @@ terminal window: use `$env:OPENWEATHER_API_KEY = "your-key"` in PowerShell,
 **5. Run it:**
 
 ```bash
-python 04_dicts_json_pip/weather_api.py
+python 04_dicts_json_pip/06_weather_api.py
 ```
 
 > Keep your key out of the code and out of Git. The demo reads it from the environment
