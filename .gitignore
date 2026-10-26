@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments and secrets
+.venv/
+venv/
+.env
+
+# Files the demos and solutions create when you run them
+07_files_exceptions/list.txt
+07_files_exceptions/playground/
+07_files_exceptions/messy_folder/
+solutions/my_notes.txt
+exercises/my_notes.txt
