@@ -1,110 +1,255 @@
-# Python Foundations: session code
+# Python Foundations
 
-Code for the **Python Foundations** live session on
-[The Growth Club](https://www.youtube.com/@TheGrowthClubOfficial) YouTube channel,
-presented by Vishal Singh.
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![YouTube: The Growth Club](https://img.shields.io/badge/YouTube-The%20Growth%20Club-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@TheGrowthClubOfficial)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20us-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/the_growthclub)
 
-Every demo from the slides is here as a runnable file, plus one exercise per module
-with a starter file and a worked solution. The slides themselves are in
-[`slides/python-foundations-slides.pdf`](slides/python-foundations-slides.pdf).
+**Learn Python from zero, one runnable example at a time.**
 
-If you want to support us, you can [buy me a coffee](https://buymeacoffee.com/the_growthclub) ☕
+This repo holds everything from the *Python Foundations* live session on
+[The Growth Club](https://www.youtube.com/@TheGrowthClubOfficial) YouTube channel:
 
-## What you need
+- **30 runnable demos**, one for every example in the session
+- **7 hands-on exercises**, each with a starter file and a worked solution
+- **The full slide deck** as a PDF: [`slides/python-foundations-slides.pdf`](slides/python-foundations-slides.pdf)
 
-- Python 3.10 or newer: download it from [python.org](https://www.python.org/downloads/).
-  On Windows, tick **"Add python.exe to PATH"** in the installer.
-- Any editor. VS Code with the Python extension works well.
+## Contents
 
-Check your install:
+- [Who this is for](#who-this-is-for)
+- [Quick start](#quick-start)
+- [How to follow along](#how-to-follow-along)
+- [Course map](#course-map)
+- [Exercises](#exercises)
+- [Weather API setup (Module 4)](#weather-api-setup-module-4)
+- [Troubleshooting](#troubleshooting)
+- [About the host](#about-the-host)
+- [Support the channel](#support-the-channel)
+
+## Who this is for
+
+- Complete beginners who have never written a line of code
+- Developers from another language who want a quick tour of Python
+- Anyone who watched the session and wants the code to practise with
+
+By the end you can store and convert data, make decisions, loop over lists, model data
+with dictionaries and JSON, call a web API, write your own functions and classes, and
+read, write and organise files safely.
+
+## Quick start
+
+**1. Install Python 3.10 or newer** from [python.org](https://www.python.org/downloads/).
+On Windows, tick **"Add python.exe to PATH"** in the installer. Then check it:
 
 ```bash
 python --version
 ```
 
-## Run an example
+**2. Get the code.** With Git:
 
-From this folder:
+```bash
+git clone https://github.com/VishalCodingNinja/python-foundations.git
+```
+
+```bash
+cd python-foundations
+```
+
+No Git? Click the green **Code** button on this page, choose **Download ZIP** and unzip it.
+
+**3. Run your first program:**
+
+```bash
+python hello.py
+```
+
+You should see `hello world`. Now try a real demo:
 
 ```bash
 python 01_data_types_io/tax_calculator.py
 ```
 
-## What's inside
+> On macOS and Linux, type `python3` wherever this guide says `python`.
 
-| Folder | Module | Files |
-|---|---|---|
-| `01_data_types_io` | 1 · Data Types and Input and Output | `data_types.py`, `tax_calculator.py`, `strings_input_output.py`, `age_calculator.py` |
-| `02_conditionals_imports` | 2 · Conditionals and Imports | `conditionals.py`, `operators_booleans.py`, `rock_paper_scissors.py`, `imports_demo.py`, `rock_paper_scissors_random.py` |
-| `03_lists_loops` | 3 · Lists and Loops | `lists_loops.py`, `sum_expenses.py`, `range_loops.py`, `loan_calculator.py` |
-| `04_dicts_json_pip` | 4 · Dictionaries, JSON, and Pip | `dictionaries.py`, `movie_schedule.py`, `lists_and_dicts.py`, `nested_contacts.py`, `json_basics.py`, `weather_api.py` |
-| `05_functions` | 5 · Functions | `functions.py`, `dice_game.py` |
-| `06_classes` | 6 · Classes and Objects | `employee.py`, `payroll.py`, `inheritance.py`, `payroll_inheritance.py` |
-| `07_files_exceptions` | 7 · Working with Files and Exceptions | `exceptions.py`, `reading_files.py`, `writing_files.py`, `file_manipulation.py`, `file_organizer.py` |
-| `exercises` | Your turn | `ex01` to `ex07`: a task and a starter file per module |
-| `solutions` | Answers | Worked solutions for `ex01` to `ex07` |
-| `slides` | The session slides | `python-foundations-slides.pdf` |
+## How to follow along
 
-`hello.py` is the classic first program.
+1. **Watch** a module in the video, with the [slides](slides/python-foundations-slides.pdf) open.
+2. **Run** that module's demos, then change the numbers and text to see what happens.
+3. **Practise** with the module's exercise in [`exercises/`](exercises/).
+4. **Compare** your answer with the matching file in [`solutions/`](solutions/).
 
-## Virtual environment and pip (Module 4)
+## Course map
 
-Only `04_dicts_json_pip/weather_api.py` needs a package from outside Python (`requests`).
-Install it into a virtual environment so it stays with this project:
+| # | Module | Code | You build | Exercise |
+|---|---|---|---|---|
+| 1 | Data Types and Input and Output | [`01_data_types_io`](01_data_types_io/) | Tax calculator, age calculator | Tip calculator |
+| 2 | Conditionals and Imports | [`02_conditionals_imports`](02_conditionals_imports/) | Rock, paper, scissors | Guess the number |
+| 3 | Lists and Loops | [`03_lists_loops`](03_lists_loops/) | Expense totals, loan calculator | Grade book |
+| 4 | Dictionaries, JSON, and Pip | [`04_dicts_json_pip`](04_dicts_json_pip/) | Movie schedule, contacts, weather app | Word counter |
+| 5 | Functions | [`05_functions`](05_functions/) | Dice rolling game | Temperature converter |
+| 6 | Classes and Objects | [`06_classes`](06_classes/) | Company payroll | Bank accounts |
+| 7 | Working with Files and Exceptions | [`07_files_exceptions`](07_files_exceptions/) | File organizer | Notes app |
+
+<details>
+<summary><b>Every lesson and the file that goes with it</b></summary>
+
+**Module 1 · Data Types and Input and Output**
+
+| Lesson | File |
+|---|---|
+| Introducing data types | [`data_types.py`](01_data_types_io/data_types.py) |
+| Demo: install Python | [`hello.py`](hello.py) |
+| Demo: tax calculator | [`tax_calculator.py`](01_data_types_io/tax_calculator.py) |
+| Strings and input and output | [`strings_input_output.py`](01_data_types_io/strings_input_output.py) |
+| Demo: age calculator | [`age_calculator.py`](01_data_types_io/age_calculator.py) |
+
+**Module 2 · Conditionals and Imports**
+
+| Lesson | File |
+|---|---|
+| Conditionals | [`conditionals.py`](02_conditionals_imports/conditionals.py) |
+| Conditional operators and booleans | [`operators_booleans.py`](02_conditionals_imports/operators_booleans.py) |
+| Demo: rock, paper, scissors | [`rock_paper_scissors.py`](02_conditionals_imports/rock_paper_scissors.py) |
+| Importing modules | [`imports_demo.py`](02_conditionals_imports/imports_demo.py) |
+| Demo: randomize the game | [`rock_paper_scissors_random.py`](02_conditionals_imports/rock_paper_scissors_random.py) |
+
+**Module 3 · Lists and Loops**
+
+| Lesson | File |
+|---|---|
+| Lists and loops | [`lists_loops.py`](03_lists_loops/lists_loops.py) |
+| Demo: sum expenses | [`sum_expenses.py`](03_lists_loops/sum_expenses.py) |
+| Loops with `range()` | [`range_loops.py`](03_lists_loops/range_loops.py) |
+| Demo: loan payment calculator | [`loan_calculator.py`](03_lists_loops/loan_calculator.py) |
+
+**Module 4 · Dictionaries, JSON, and Pip**
+
+| Lesson | File |
+|---|---|
+| Dictionaries | [`dictionaries.py`](04_dicts_json_pip/dictionaries.py) |
+| Demo: movie schedule | [`movie_schedule.py`](04_dicts_json_pip/movie_schedule.py) |
+| Combining lists and dictionaries | [`lists_and_dicts.py`](04_dicts_json_pip/lists_and_dicts.py) |
+| Demo: nested contacts | [`nested_contacts.py`](04_dicts_json_pip/nested_contacts.py) |
+| Reading JSON | [`json_basics.py`](04_dicts_json_pip/json_basics.py) |
+| Demo: virtual environment and pip | [Weather API setup](#weather-api-setup-module-4) |
+| Demo: OpenWeatherMap API | [`weather_api.py`](04_dicts_json_pip/weather_api.py) |
+
+**Module 5 · Functions**
+
+| Lesson | File |
+|---|---|
+| Functions | [`functions.py`](05_functions/functions.py) |
+| Demo: dice rolling game | [`dice_game.py`](05_functions/dice_game.py) |
+
+**Module 6 · Classes and Objects**
+
+| Lesson | File |
+|---|---|
+| Classes | [`employee.py`](06_classes/employee.py) |
+| Demo: company payroll | [`payroll.py`](06_classes/payroll.py) |
+| Class inheritance | [`inheritance.py`](06_classes/inheritance.py) |
+| Demo: payroll with inheritance | [`payroll_inheritance.py`](06_classes/payroll_inheritance.py) |
+
+**Module 7 · Working with Files and Exceptions**
+
+| Lesson | File |
+|---|---|
+| Exceptions | [`exceptions.py`](07_files_exceptions/exceptions.py) |
+| Reading files | [`reading_files.py`](07_files_exceptions/reading_files.py) |
+| Demo: writing files | [`writing_files.py`](07_files_exceptions/writing_files.py) |
+| File manipulation | [`file_manipulation.py`](07_files_exceptions/file_manipulation.py) |
+| Demo: file organizer | [`file_organizer.py`](07_files_exceptions/file_organizer.py) |
+
+</details>
+
+## Exercises
+
+Each exercise file starts with the task, a sample run and hints, followed by `TODO`
+comments where your code goes. Try it yourself first, then check the solution.
+
+| # | Exercise | You practise | Start here | Solution |
+|---|---|---|---|---|
+| 1 | Tip calculator | `input()`, type conversion, f-strings | [starter](exercises/ex01_tip_calculator.py) | [solution](solutions/ex01_tip_calculator.py) |
+| 2 | Guess the number | `random`, `if` / `elif` / `else` | [starter](exercises/ex02_guess_the_number.py) | [solution](solutions/ex02_guess_the_number.py) |
+| 3 | Grade book | lists, `range()`, loops | [starter](exercises/ex03_grade_book.py) | [solution](solutions/ex03_grade_book.py) |
+| 4 | Word counter | dictionaries, JSON | [starter](exercises/ex04_word_counter.py) | [solution](solutions/ex04_word_counter.py) |
+| 5 | Temperature converter | functions, `return`, default values | [starter](exercises/ex05_temperature_converter.py) | [solution](solutions/ex05_temperature_converter.py) |
+| 6 | Bank accounts | classes, inheritance, `super()` | [starter](exercises/ex06_bank_account.py) | [solution](solutions/ex06_bank_account.py) |
+| 7 | Notes app | files, `try` / `except` | [starter](exercises/ex07_notes_app.py) | [solution](solutions/ex07_notes_app.py) |
+
+## Weather API setup (Module 4)
+
+Every demo runs with plain Python except
+[`weather_api.py`](04_dicts_json_pip/weather_api.py), which needs the `requests`
+package and a free API key.
+
+**1. Create a virtual environment**, so packages stay inside this project:
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it. On Windows:
+**2. Activate it.** Windows (PowerShell or Command Prompt):
 
 ```bash
 .venv\Scripts\activate
 ```
 
-On macOS or Linux:
+macOS or Linux:
 
 ```bash
 source .venv/bin/activate
 ```
 
-Then install the packages:
+Your prompt now starts with `(.venv)`.
+
+**3. Install the packages:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-The weather demo also needs a free API key from [openweathermap.org](https://openweathermap.org).
-Store it in an environment variable rather than in the code. In PowerShell:
+**4. Add your API key.** Create a free account at
+[openweathermap.org](https://openweathermap.org) and copy your key. Set it in the same
+terminal window: use `$env:OPENWEATHER_API_KEY = "your-key"` in PowerShell,
+`set OPENWEATHER_API_KEY=your-key` in Command Prompt, or
+`export OPENWEATHER_API_KEY=your-key` on macOS and Linux.
+
+**5. Run it:**
 
 ```bash
-$env:OPENWEATHER_API_KEY = "your-key"
+python 04_dicts_json_pip/weather_api.py
 ```
 
-## Exercises
+> Keep your key out of the code and out of Git. The demo reads it from the environment
+> for exactly that reason.
 
-1. Open a file in `exercises/` and read the task at the top.
-2. Replace the `TODO` comments with your code and run it.
-3. Stuck? Compare with the matching file in `solutions/`.
+## Troubleshooting
 
-| Exercise | Module | You practise |
-|---|---|---|
-| `ex01_tip_calculator.py` | 1 | input(), type conversion, f-strings |
-| `ex02_guess_the_number.py` | 2 | random, if / elif / else |
-| `ex03_grade_book.py` | 3 | lists, range(), loops |
-| `ex04_word_counter.py` | 4 | dictionaries, JSON |
-| `ex05_temperature_converter.py` | 5 | functions, return, default values |
-| `ex06_bank_account.py` | 6 | classes, inheritance, super() |
-| `ex07_notes_app.py` | 7 | files, try / except |
+| Problem | Fix |
+|---|---|
+| `python` is not recognized | Reinstall Python with **"Add python.exe to PATH"** ticked, or use `py` on Windows and `python3` on macOS/Linux. |
+| `ModuleNotFoundError: No module named 'requests'` | Activate the virtual environment, then run `pip install -r requirements.txt`. |
+| PowerShell won't run `.venv\Scripts\activate` | Open Command Prompt instead and run `.venv\Scripts\activate.bat`. |
+| `ValueError: invalid literal for int()` | The program expected a whole number. Type digits only; Module 7 shows how to catch this error. |
+| Weather demo returns error 401 | The API key is wrong or still new. Fresh OpenWeatherMap keys can take a couple of hours to start working. |
+| A file demo created extra files | That's expected. The demos in `07_files_exceptions` only touch files they create (`list.txt`, `playground/`, `messy_folder/`). Delete them any time. |
 
-## Safe to experiment
+Still stuck? [Open an issue](https://github.com/VishalCodingNinja/python-foundations/issues)
+with the command you ran and the full error message.
 
-The file demos in `07_files_exceptions` only touch files they create themselves
-(`list.txt`, `playground/`, `messy_folder/`). Delete those any time; the scripts
-recreate them.
+## About the host
+
+**Vishal Singh**, Cloud Engineer. 7+ years building cloud platforms on Azure and
+Kubernetes, and bringing agentic AI into real products.
+
+Certifications: Azure Solutions Architect Expert · Agentic AI Business Solutions
+Architect · Azure AI Apps and Agents Developer Associate · Azure AI Engineer Associate ·
+Azure Developer Associate · AI Transformation Leader · Certified ScrumMaster.
 
 ## Support the channel
 
-If this session helped you, subscribe to
-[The Growth Club](https://www.youtube.com/@TheGrowthClubOfficial). And if you want to
-support us, you can buy me a coffee: <https://buymeacoffee.com/the_growthclub>.
+If this session helped you:
+
+- **Subscribe** to [The Growth Club](https://www.youtube.com/@TheGrowthClubOfficial) on YouTube
+- **Star** this repo so others can find it
+- **Buy me a coffee** at [buymeacoffee.com/the_growthclub](https://buymeacoffee.com/the_growthclub) ☕
